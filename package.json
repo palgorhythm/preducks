@@ -1,6 +1,6 @@
 {
   "name": "preducks",
-  "version": "",
+  "version": "1.0.0",
   "description": "prototyping tool for react + redux + typescript applications",
   "author": "preducks",
   "main": "main.js",
@@ -24,7 +24,7 @@
         "AppImage",
         "deb"
       ],
-      "maintainer": "sjaco"
+      "maintainer": "preducks"
     },
     "mac": {
       "category": "public.app-category.developer-tools",
@@ -40,7 +40,7 @@
     },
     "files": [
       "main.js",
-      "build/electron"
+      "build"
     ],
     "productName": "preducks",
     "dmg": {
