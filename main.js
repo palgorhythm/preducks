@@ -8,8 +8,6 @@ if (isElectron()) {
 
   // Uncomment below for hot reloading during development
   // require('electron-reload')(__dirname);
-
-  // const isDev = true;
   const isDev = process.env.NODE_ENV === 'development';
 
   // Keep a global reference of the window object, if you don't, the window will
@@ -105,9 +103,6 @@ if (isElectron()) {
       {
         label: 'Edit',
         submenu: [
-          // { role: 'undo' },
-          // { role: 'redo' },
-          // { type: 'separator' },
           { role: 'cut' },
           { role: 'copy' },
           { role: 'paste' },
@@ -174,12 +169,6 @@ if (isElectron()) {
         ],
       });
 
-      // Edit menu
-      // template[2].submenu.push(
-      //   { type: 'separator' },
-      //   { label: 'Speech', submenu: [{ role: 'startspeaking' }, { role: 'stopspeaking' }] },
-      // );
-
       // Window menu
       template[4].submenu = [
         { role: 'close' },
@@ -195,9 +184,6 @@ if (isElectron()) {
 
     // Emitted when the window is closed.
     mainWindow.on('closed', () => {
-      // Dereference the window object, usually you would store windows
-      // in an array if your app supports multi windows, this is the time
-      // when you should delete the corresponding element.
       mainWindow = null;
     });
   };

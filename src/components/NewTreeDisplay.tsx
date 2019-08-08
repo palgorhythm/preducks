@@ -91,16 +91,16 @@ const TreeDisplay: React.FC<PropsInt> = (props): JSX.Element => {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  });
+  // useEffect(() => {
+  //   window.addEventListener('resize', handleResize);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // });
 
-  useEffect(() => {
-    handleResize();
-  }, []);
+  // useEffect(() => {
+  //   handleResize();
+  // }, []);
 
   useEffect(() => {
     handleResize();
